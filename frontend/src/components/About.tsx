@@ -1,7 +1,6 @@
 
 import {
   Target,
-  Eye,
   Sprout,
   Database,
   Cpu,
@@ -41,10 +40,8 @@ export default function About() {
       <div className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-[#00C8F5]/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
-
         {/* Encabezado */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#8BEA00]/40 bg-[#8BEA00]/10 px-4 py-2">
             <Leaf size={15} className="text-[#568F00]" />
 
@@ -61,20 +58,16 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-base leading-8 text-slate-500 sm:text-lg">
-            SmartGreenZone es un proyecto académico que
-            integra Internet de las Cosas (IoT), sensores
-            inteligentes y gestión de datos para contribuir
-            al monitoreo de las condiciones ambientales
-            en entornos agrícolas.
+            SmartGreenZone es un proyecto académico que integra Internet de
+            las Cosas (IoT), sensores inteligentes y gestión de datos para
+            contribuir al monitoreo de las condiciones ambientales en
+            entornos agrícolas.
           </p>
-
         </div>
 
         {/* Presentación principal */}
         <div className="grid items-center gap-12 lg:grid-cols-2">
-
           <div>
-
             <span className="text-sm font-bold uppercase tracking-widest text-[#68B900]">
               ¿Quiénes somos?
             </span>
@@ -84,20 +77,17 @@ export default function About() {
             </h3>
 
             <p className="mt-6 text-base leading-8 text-slate-500">
-              SmartGreenZone propone un ecosistema de
-              monitoreo agrícola basado en dispositivos
-              electrónicos y tecnologías de comunicación.
-              Su finalidad es adquirir información del
-              entorno, organizar las mediciones y facilitar
-              su visualización para apoyar el seguimiento
-              de los cultivos.
+              SmartGreenZone propone un ecosistema de monitoreo agrícola
+              basado en dispositivos electrónicos y tecnologías de
+              comunicación. Su finalidad es adquirir información del
+              entorno, organizar las mediciones y facilitar su visualización
+              para apoyar el seguimiento de los cultivos.
             </p>
 
             <p className="mt-4 text-base leading-8 text-slate-500">
-              El proyecto se desarrolla en el contexto
-              académico de la asignatura Big Data de la
-              Universidad de Cundinamarca, relacionando
-              la adquisición de datos IoT con su
+              El proyecto se desarrolla en el contexto académico de la
+              asignatura Big Data de la Universidad de Cundinamarca,
+              relacionando la adquisición de datos IoT con su
               almacenamiento, procesamiento y consulta.
             </p>
 
@@ -108,18 +98,14 @@ export default function About() {
               Conocer nuestra solución
               <ArrowRight size={18} />
             </a>
-
           </div>
 
           {/* Panel visual */}
           <div className="relative">
-
             <div className="absolute inset-5 rounded-[2rem] bg-gradient-to-br from-[#8BEA00]/20 to-[#00C8F5]/20 blur-2xl" />
 
             <div className="relative overflow-hidden rounded-[2rem] border border-slate-100 bg-white p-8 shadow-xl shadow-[#062331]/5 sm:p-10">
-
               <div className="flex items-center justify-between">
-
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
                     SmartGreenZone
@@ -133,11 +119,9 @@ export default function About() {
                 <div className="rounded-2xl bg-[#8BEA00]/15 p-4">
                   <Sprout size={30} className="text-[#568F00]" />
                 </div>
-
               </div>
 
               <div className="my-10 grid grid-cols-2 gap-4">
-
                 <div className="rounded-2xl bg-[#F3F8F0] p-5">
                   <Cpu size={28} className="text-[#68B900]" />
 
@@ -177,7 +161,6 @@ export default function About() {
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <div className="flex items-center justify-between border-t border-slate-100 pt-5">
@@ -189,14 +172,12 @@ export default function About() {
                   Big Data
                 </span>
               </div>
-
             </div>
           </div>
         </div>
 
         {/* Pilares del proyecto */}
         <div className="mt-24">
-
           <div className="mb-10 text-center">
             <h3 className="text-3xl font-extrabold text-[#062331]">
               ¿Qué nos impulsa?
@@ -208,7 +189,6 @@ export default function About() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-
             {pillars.map((pillar) => {
               const Icon = pillar.icon
 
@@ -231,15 +211,12 @@ export default function About() {
                 </article>
               )
             })}
-
           </div>
         </div>
 
         {/* Identificación académica */}
         <div className="mt-20 rounded-3xl border border-[#00C8F5]/20 bg-white p-8 shadow-sm sm:p-10">
-
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-[#68B900]">
                 Contexto académico
@@ -267,10 +244,8 @@ export default function About() {
                 IoT · Datos · Agricultura inteligente
               </p>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   )
