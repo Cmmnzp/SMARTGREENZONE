@@ -243,7 +243,7 @@ export default function DataManagement() {
 
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-[#F7FAF8] p-3 sm:p-5">
             <img
-              src="/images/azure-sql/modelo-estrella.png"
+              src={`${import.meta.env.BASE_URL}images/azure-sql/modelo-estrella.png`}
               alt="Diagrama real del modelo dimensional de SmartGreenZone"
               loading="lazy"
               className="h-auto w-full rounded-xl object-contain"
@@ -363,7 +363,7 @@ export default function DataManagement() {
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <img
-                src="/images/azure-sql/validacion-registros.png"
+                src={`${import.meta.env.BASE_URL}images/azure-sql/validacion-registros.png`}
                 alt="Consulta SQL y resultado de validación de registros"
                 loading="lazy"
                 className="h-auto w-full object-contain"
