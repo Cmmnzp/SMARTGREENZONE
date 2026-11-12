@@ -1,75 +1,65 @@
-# React + TypeScript + Vite
+# Aplicación web SmartGreenZone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+La aplicación web presenta el proyecto académico SmartGreenZone: una propuesta de monitoreo agrícola que integra sensores IoT, gestión de datos y análisis. El escenario descrito y los datos del proyecto son simulados; las lecturas de sensores no deben interpretarse como resultados de un cultivo real ni como mediciones calibradas cuando se expresan en ADC.
 
-Currently, two official plugins are available:
+## Secciones del sitio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La página principal (`/`) organiza la información del proyecto en secciones:
 
-## React Compiler
+- Identificación, problema, justificación y objetivos.
+- Marco referencial y metodología.
+- Solución IoT y arquitectura de cinco capas.
+- Gestión, almacenamiento y análisis de datos.
+- Conocimiento, decisiones, resultados y referencias.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La ruta `/dashboard` presenta indicadores, preguntas de análisis y criterios de calidad de datos, junto con un enlace a un informe de Microsoft Power BI.
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React y TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Lucide React
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Requisitos
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js 20.19 o superior, o 22.12 o superior.
+- npm.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Ejecutar localmente
 
+Desde esta carpeta (`frontend`):
+
+```powershell
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Vite muestra en la terminal la dirección local del sitio, normalmente <http://localhost:5173>.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Comandos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el servidor de desarrollo. |
+| `npm run lint` | Ejecuta ESLint. |
+| `npm run build` | Comprueba TypeScript y genera `dist/`. |
+| `npm run preview` | Sirve localmente la compilación generada. |
 
+## Estructura
+
+```text
+src/
+├── components/     # Navegación y secciones del proyecto
+├── pages/
+│   ├── Home.tsx    # Página principal
+│   └── Dashboard.tsx
+├── App.tsx         # Rutas
+└── main.tsx        # Entrada de React
+
+public/
+└── images/         # Imágenes e ilustraciones del proyecto
 ```
+
+Consulta el [README principal](../README.md) para conocer el problema, los objetivos, la arquitectura y los avances reportados de SmartGreenZone.
