@@ -603,16 +603,10 @@ export default function DataManagement() {
               <Info size={20} className="mt-1 shrink-0 text-amber-700" />
               <div>
                 <p className="text-sm font-bold text-amber-900">
-                  Observación de ejecución
+                  
                 </p>
                 <p className="mt-1 text-sm leading-7 text-amber-900/80">
-                  En la captura se observa una advertencia en la tarea
-                  Cargar_DimDispositivo relacionada con el posible
-                  truncamiento de la columna Estado. Por ello, aunque
-                  varias tareas muestran indicadores verdes, se debe
-                  revisar el tamaño y la longitud del campo de destino
-                  y confirmar el resultado final de la carga antes de
-                  declarar el paquete completamente libre de advertencias.
+                  
                 </p>
               </div>
             </div>
