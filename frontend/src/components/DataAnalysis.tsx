@@ -409,7 +409,7 @@ export default function DataAnalysis() {
 
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <img
-              src="/images/power-bi/dashboard.png"
+              src={`${import.meta.env.BASE_URL}images/power-bi/dashboard.png`}
               alt="Dashboard de Power BI de SmartGreenZone"
               loading="lazy"
               className="h-auto w-full object-contain"
