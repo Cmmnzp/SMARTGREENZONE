@@ -1,7 +1,7 @@
 import {
   Activity, ArrowLeft, BarChart3, CheckCircle2, Database, Droplets,
   ExternalLink, FileSearch, Info, Leaf, Lightbulb, Radio, Sprout,
-  Thermometer, Wifi,
+  Thermometer,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import BrandLogo from '../components/BrandLogo'
