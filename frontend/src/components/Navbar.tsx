@@ -118,7 +118,7 @@ export default function Navbar() {
         </Link>
 
         {/* NAVEGACIÓN DE ESCRITORIO */}
-        <div className="hidden items-center gap-5 xl:flex">
+        <div className="hidden items-center gap-6 xl:flex">
 
           <a
             href="#inicio"
