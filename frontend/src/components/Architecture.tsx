@@ -13,6 +13,8 @@ import {
   CheckCircle2,
 } from 'lucide-react'
 
+import ArchitectureGallery from './ArchitectureGallery'
+
 const layers = [
   {
     number: '01',
@@ -348,6 +350,9 @@ export default function Architecture() {
             </div>
           </div>
         </div>
+
+        {/* GALERÍA FOTOGRÁFICA */}
+        <ArchitectureGallery />
 
         {/* CIERRE */}
         <div className="mt-10 flex flex-col gap-5 rounded-2xl bg-[#062331] p-7 text-white md:flex-row md:items-center md:justify-between md:p-9">
