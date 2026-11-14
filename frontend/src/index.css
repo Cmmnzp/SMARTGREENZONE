@@ -26,3 +26,8 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Evita el scroll del fondo mientras hay un visor modal abierto. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
